@@ -1,0 +1,352 @@
+@media print, screen {
+  html,
+  body {
+    width: 210mm;
+    max-width: 210mm;
+    min-height: 594mm;
+    padding: 0;
+    margin: 0;
+    font-size: 10pt;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #313131;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Raleway", sans-serif;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  h1 {
+    font-size: 30pt;
+    margin: 0;
+    line-height: 0.9;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  h2 {
+    font-size: 14pt;
+    margin: 0.5rem 0 0 0;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #919191;
+  }
+
+  h3 {
+    font-size: 14pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  header {
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+  }
+
+  .header-background {
+    background: #D6E6E6;
+    display: block;
+    width: 3rem;
+  }
+
+  .header-text {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  aside {
+    background: #D6E6E6;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem 0 0;
+
+    li {
+      padding-bottom: 0.3rem;
+
+      i {
+        min-width: 1.5rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: #446F6F;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  figure {
+    margin: 0;
+    padding: 1.5rem;
+  }
+
+  figcaption {
+    display: none;
+  }
+
+  main {
+    flex-grow: 2;
+    display: flex;
+    gap: 1.5rem;
+    min-height: calc(594mm - 164px - 2rem);
+  }
+
+  .content {
+    padding-right: 1.5rem;
+  }
+
+  .about-me {
+    color: #616161;
+  }
+
+  .sidebar {
+    order: 0;
+    width: 46rem;
+
+    p {
+      margin: 0 0 1.5rem 0;
+    }
+
+    .tech {
+      background: #EDEDED;
+      padding: 1.5rem;
+      min-height: calc(297mm - 17.25rem);
+
+      p {
+        margin: 0;
+        padding: 0 0 0.5rem 0;
+
+        .decoration {
+          color: #446F6F;
+          display: inline-block;
+          padding-right: 0.3rem;
+        }
+      }
+
+      ul {
+        padding-bottom: 2rem;
+
+        li {
+          padding-bottom: 0.3rem;
+
+          i {
+            margin-right: 0.2rem;
+          }
+        }
+      }
+    }
+
+    .education {
+      min-height: calc(297mm - 4rem);
+      padding-top: 2rem;
+      display: flex;
+      align-items: stretch;
+
+      .education-content {
+        background: #EDEDED;
+        padding: 1.5rem;
+      }
+
+      .h-card {
+        .p-location {
+          text-transform: uppercase;
+          display: block;
+          padding-bottom: 0.4rem;
+          font-weight: 800;
+        }
+
+        .p-name {
+          font-style: italic;
+          display: block;
+          padding-bottom: 0.4rem;
+        }
+
+        time {
+          font-family: "Roboto Mono", monospace;
+          font-optical-sizing: auto;
+          font-weight: 500;
+
+          &:first-child {
+            &:before {
+              content: "(";
+            }
+          }
+
+          &:last-child {
+            &:before {
+              content: " - ";
+            }
+            &:after {
+              content: ")";
+            }
+          }
+        }
+      }
+
+      .p-summary {
+        & > ul > li {
+          padding-top: 1rem;
+
+          & > span {
+            display: block;
+            padding-bottom: 0.5rem;
+
+            .decoration {
+              color: #446F6F;
+              display: inline-block;
+              padding-right: 0.3rem;
+            }
+          }
+
+          li {
+            padding-bottom: 0.4rem;
+          }
+        }
+      }
+
+      .mentoring {
+        .title {
+          text-transform: uppercase;
+          display: block;
+          padding-bottom: 0.4rem;
+          font-weight: 800;
+        }
+
+        .p-name {
+          font-style: italic;
+        }
+      }
+    }
+  }
+
+  section {
+    header {
+      padding: 0 0 1.5rem;
+
+      h3 {
+        margin: 0;
+      }
+    }
+
+    .experience {
+      & > li {
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #EDEDED;
+
+        .experience-heading {
+          display: flex;
+          gap: 2rem;
+
+          .experience-date {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: "Roboto Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-size: 11pt;
+            letter-spacing: 1px;
+
+            time:first-child {
+              padding-bottom: 0.2rem;
+              border-bottom: 1px solid #616161;
+              margin-bottom: 0.2rem;
+            }
+          }
+
+          .experience-title {
+            flex-grow: 2;
+
+            span {
+              display: block;
+            }
+
+            .p-name {
+              font-size: 12pt;
+              text-transform: uppercase;
+              padding-bottom: 0.2rem;
+              font-weight: 600;
+            }
+
+            .p-location {
+              font-size: 11pt;
+              font-style: italic;
+              color: #919191;
+              font-weight: 600;
+            }
+          }
+        }
+
+        .p-summary {
+          .tech-stack {
+            padding-bottom: 1rem;
+            ul {
+              display: flex;
+              gap: 0.5rem;
+
+              li {
+                background: #D6E6E6;
+                padding: 0.1rem 0.4rem;
+                font-size: 9pt;
+                font-weight: 600;
+                color: #616161;
+              }
+            }
+          }
+          .description {
+            font-style: italic;
+            color: #616161;
+          }
+
+          .accomplishments {
+            list-style-type: disc;
+            padding: 0 0 0 2rem;
+
+            li {
+              padding-bottom: 0.5rem;
+
+              &:last-child {
+                padding-bottom: 0;
+              }
+            }
+          }
+        }
+
+        &:last-child {
+          border-bottom: 0;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    .page-spacing {
+      padding-top: 2rem;
+    }
+  }
+
+  .content {
+    order: 1;
+  }
+}
